@@ -1,0 +1,14 @@
+# 项目2：基于 LoRA 微调的中医医学专家大模型 —— 运行依赖
+# 本机已验证版本（Windows + Python 3.11 + CPU）
+torch>=2.2
+transformers>=4.51
+peft>=0.12
+datasets>=3.0
+accelerate>=0.34
+modelscope>=1.20
+gradio>=5.0
+python-docx>=1.1
+python-pptx>=0.6.23
+# 说明：
+# 1. CPU 环境直接 pip install torch 即可；GPU 环境请按 https://pytorch.org 选择对应 CUDA 版本。
+# 2. 训练日志使用 Trainer 控制台输出（report_to="none"），无需安装 swanlab。
